@@ -5,10 +5,36 @@
   <body>
     <header>
       <nav>
-        <a href="/05.11.22-Lab-2/index.html">Home</a>
+        <a href="./index">Home</a>
       </nav>
     </header>
     <main>
+      <form method="POST" action="http://localhost:3000/profile">
+        <div>
+          <label for="first_name">First Name: </label>
+          <input type="text" id="first_name"></div>
+        <div>
+          <label for="last_name">Last Name: </label>
+          <input type="text" id="last_name">
+        </div>
+        <div>
+          <input type="radio" id="select_one" name="radio_button" checked>
+          <label for="select_one">Select One</label>
+          <input type="radio" id="second_radio" name="radio_button">
+          <label for="second_radio">Select Two</label>
+        </div>
+        <div>
+          <input type="checkbox" id="check_one" name="check">
+          <label for="">Check One</label>
+          <input type="checkbox" id="check_two" name="check">
+          <label for="">Check Two</label></div>  
+          <label for="numbers">Select One Please: </label>  
+          <select name="numbers" id="numbers">
+            <option value="one">One</option>
+            <option value="two">Two</option>
+            <option value="three">Three</option>
+        </select> 
+      </form>  
     </main>
     <footer>Copyright 2021 &copy;</footer>
   </body>
