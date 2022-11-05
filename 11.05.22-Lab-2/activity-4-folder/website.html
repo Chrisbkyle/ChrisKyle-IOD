@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My First Website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+            *  {
+                font-style: "Zen Antique", serif;
+            }   
+            a:hover {
+                font-style: italic;
+                font-size: 25px;
+            }
+            a:visited  {
+                color: grey;
+            }
+            
+            a   {
+                color: black;
+                text-shadow: 1px 1px 2px saddlebrown;
+                text-decoration: none;
+                font-weight: bolder;
+                text-align: center;
+                line-height: 6;
+                font-size:20px;
+            }  
+            .flex_holder_one  {
+                display: flex;
+                border:1px solid saddlebrown;
+                background-color: sandybrown;
+            }
+            .header_name  {
+                flex: 66%;   
+                padding: auto;
+                margin: auto;
+                text-align: center;
+                font-size: 50px;
+                font-style: italic;
+            }
+            .header_photo  {
+                flex: 33%;
+                object-fit: cover;
+            }
+            .nav_bar  {
+                background-color:sandybrown;
+                display: flex;
+            }
+            .nav_link  {
+                flex: 25%;
+                border: 2px double saddlebrown;
+                text-align: center;
+                font-weight: bolder;
+                font-size:  20px; 
+                margin-bottom: 0px;
+            }
+            .content_flex_container  {
+                display: flex;
+                background-color:sandybrown;
+            }
+            .portfolio  {
+                flex: 20%;
+                background-color: darkred;
+                text-align: center;
+                border-right: 2px double saddlebrown;
+            }
+            .resume_content  {
+                flex: 80%;
+                background-color:sandybrown;
+            }
+            .skills  {
+                padding-left: 20px;
+            }
+            .education  {
+                padding-left: 20px;
+                background-color:sandybrown;
+                border-top: 2px double saddlebrown;
+                border-bottom: 2px double saddlebrown;
+            }
+            ul li  {
+                list-style-type: none;
+            }
+            .references  {
+                padding-left: 20px;
+                padding-bottom: 20px;
+            }
+            table  {
+                padding-left: 20px;
+            }
+            th  {
+                text-align: left;
+                width:25%;
+            }
+            .contact_info  {
+                border-top: 2px double black;
+                background-color: darkred;
+                text-shadow: 1px 1px 0px saddlebrown;
+                text-align: center; 
+                font-size: 25px; 
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="flex_holder_one">
+                <h1 class="header_name">Chris Kyle: Resume</h1>
+                <img class="header_photo" src="/ChrisKyle-IOD/images/resumephoto.jpg" alt="only photo I could find" height="250px" width="150px">
+            </div>
+        </header>
+
+
+        <nav class="nav_bar">
+            <div class="nav_link">Skills</div>
+            <div class="nav_link">Portfolio</div>
+            <div class="nav_link">References</div>
+            <div class="nav_link">Contact Info</div>
+        </nav>
+
+
+        <section class="content_flex_container">
+            <sidebar class="portfolio">
+                <h3>Portfolio examples</h3>
+                <a class="portfolio_links" href="https://www.google.com/">Website example 1</a><br>
+                <a class="portfolio_links"  href="#.com">Website example 2</a><br>
+                <a class="portfolio_links"  href="@.com">Website example 3</a><br>
+                <a class="portfolio_links"  href="!.com">Website example 4</a><br>
+            </sidebar>
+            <div class="resume_content">
+                <div class="skills">
+                    <h3>Relevant Skills</h3>
+                    <ul> 
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Node.JS</li>
+                        <li>Git and Github</li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <h4>Insitute Of Data @ AUT Oct 2022-April 2023</h4>
+                    <ul>
+                        <li>Class Taken</li>
+                        <li>Information about skills studied</li>
+                        <li>Skills Developed</li>
+                        <li>Skills where I excelled</li>
+                    </ul>
+                    <h4>VCC July 2009-June 2010</h4>
+                    <ul>
+                        <li>Class Taken</li>
+                        <li>Information about skills studied</li>
+                        <li>Skills Developed</li>
+                        <li>Skills where I excelled</li>
+                    </ul>
+                </div>
+                <div class="references">
+                    <h3>References</h3>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Company</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                        </tr>
+                        <tr>
+                            <td>First Reference</td>
+                            <td>Company Worked</td>
+                            <td>blankemail@email.email</td>
+                            <td>555-123-4352</td>
+                        </tr>
+                        <tr>
+                            <td>Second Reference</td>
+                            <td>Company Worked</td>
+                            <td>blankemail@email.email</td>
+                            <td>555-123-4351</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <footer class="contact_info">
+            Chris Kyle
+            email@email.email
+            123-123-1234
+        </footer>
+    </body>
+</html>
