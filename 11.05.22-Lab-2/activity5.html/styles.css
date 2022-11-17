@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
+    a:hover {
+        font-style: italic;
+        font-size: 25px;
+    }
+    a:visited  {
+        color: grey;
+    }
+
+    a   {
+        color: black;
+        text-shadow: 1px 1px 2px saddlebrown;
+        text-decoration: none;
+        font-weight: bolder;
+        text-align: center;
+        line-height: 6;
+        font-size:1.2rem;
+    }  
+    .flex_holder_one  {
+        display: flex;
+        border:1px solid saddlebrown;
+        background-color: sandybrown;
+    }
+    .header_name  {
+        flex: 66%;   
+        padding: auto;
+        margin: auto;
+        text-align: center;
+        font-size: 3rem;
+        font-style: italic;
+    }
+    .header_photo  {
+        flex: 33%;
+        object-fit: cover;
+    }
+    .nav_bar  {
+        background-color:sandybrown;
+        display: flex;
+    }
+    .nav_link  {
+        flex: 25%;
+        border: 2px double saddlebrown;
+        text-align: center;
+        font-weight: bolder;
+        font-size:  20px; 
+        margin-bottom: 0px;
+    }
+    .content_flex_container  {
+        display: flex;
+        background-color:sandybrown;
+        font-size: 18px;
+    }
+    .portfolio  {
+        flex: 20%;
+        background-color: darkred;
+        text-align: center;
+        border-right: 2px double saddlebrown;
+    }
+    .resume_content  {
+        flex: 80%;
+        background-color:sandybrown;
+    }
+    .skills  {
+        padding-left: 20px;
+    }
+    .education  {
+        padding-left: 20px;
+        background-color:sandybrown;
+        border-top: 2px double saddlebrown;
+        border-bottom: 2px double saddlebrown;
+    }
+    ul li  {
+        list-style-type: none;
+    }
+    .references  {
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    table  {
+        padding-left: 20px;
+        width: auto;
+        height: auto;
+    }
+    th  {
+        text-align: left;
+    }
+    .contact_info  {
+        border-top: 2px double black;
+        background-color: darkred;
+        text-shadow: 1px 1px 0px saddlebrown;
+        text-align: center; 
+        font-size: 25px; 
+        font-weight: bold;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+      }
