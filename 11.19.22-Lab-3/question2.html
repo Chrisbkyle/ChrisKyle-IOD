@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript Fundamentals Question 2</title>
+        <meta charset-utf-8>
+        <meta name="viewport" content="width=device-width" initial-scale="1" minimum-scale="1"> 
+    </head>
+    <body>
+        <script>
+            // 2 Here's a code that asks the user for two nubmers and shows their sum.  It works uncorrectly.
+            //  The output in the example below is 12 (for default prompt values)/
+            // Why?  Fix it.  The result should be 3
+
+            //Why... they convert to a string because
+            //The prompt function seems to only work with string data types???
+            //How to avoid the convertion or convert back
+
+            let a = prompt("First number?", 1);
+            let b = prompt("Second number?", 2);
+
+
+            alert(Number(a) + Number(b));  //3 built in Number() function seems like the simplest why to display the strings as numbers
+        </script>
+    </body>
+</html>

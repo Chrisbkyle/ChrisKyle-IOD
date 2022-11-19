@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript Fundamentals Question 7</title>
+        <meta charset-utf-8>
+        <meta name="viewport" content="width=device-width" initial-scale="1" minimum-scale="1"> 
+    </head>
+    <body>
+        <script>
+            // 7  write function isEmpty(obj) which returns true if the object has no properties, false otherwise
+
+            const obj1 = {};
+            const obj2 = {
+                firstName:"John",
+                lastName:"Doe",
+                age:50,
+                eyeColor:"blue"
+            }
+
+            // console.log(Object.keys(obj1).length);
+            // console.log(Object.keys(obj2).length);
+
+            function isEmpty(a)  {
+                objSize = Object.keys(a).length;
+                    
+                if(objSize <= 0) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+            console.log(isEmpty(obj1));
+            console.log(isEmpty(obj2));
+
+            obj1.name = 'Kevin'
+
+            console.log(isEmpty(obj1));
+        </script>
+    </body>
+</html>

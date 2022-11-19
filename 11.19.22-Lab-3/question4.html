@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript Fundamentals Question 4</title>
+        <meta charset-utf-8>
+        <meta name="viewport" content="width=device-width" initial-scale="1" minimum-scale="1"> 
+    </head>
+    <body>
+        <script>
+            // 4 Will an alert be shown
+
+            if  ("literally anything that holds value") {
+                alert( 'Hello');
+            }
+
+            if  ("") {
+                alert( 'Goodbye');
+            }
+            // yes why?
+            // putting any value in the parameter that is determined to be true will trigger the if statement
+
+            console.log("" == "0");
+            console.log(undefined == 0);
+            console.log(undefined == false);
+            console.log(undefined == true);
+            console.log(undefined == 1);
+
+        </script>
+    </body>
+</html>

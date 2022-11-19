@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript Fundamentals Question 9</title>
+        <meta charset-utf-8>
+        <meta name="viewport" content="width=device-width" initial-scale="1" minimum-scale="1"> 
+    </head>
+    <body>
+        <script>
+            
+
+            // 9: Create New Accumulator
+            //Create a constructor function Accumulator(startingValue).
+            //Object that it creates should:
+
+            //  1: Store the "current value" in the property value. The starting value
+            //  is set to the argument of the constructor startingValue
+            //
+            //  2: The read() method should use prompt to read a new number and add it to value
+
+            //In other words, the value property is the sum of all user-entered
+            //values with the initial value startingValue
+
+            //Here's the demo of the code:
+
+            // function questionNine() {
+
+                //Write constructor function here
+                function Accumulator(startingValue) {
+                    this.a = startingValue 
+
+                    this.read = function(){
+                        prompt('hello', 0);
+                    }
+                }
+
+                console.log(Accumulator);
+
+                
+                let accumulator = new Accumulator(1); //initial value 1
+
+                accumulator.read(); // adds the user-entered value need to prompt user to enter value
+
+                accumulator.read(); // adds the user-entered value refers to something within the accumulator
+
+                console.log(accumulator.value); // shows the sum of these values
+            // }
+            
+            // initial value 1
+
+
+        </script>
+    </body>
+</html>

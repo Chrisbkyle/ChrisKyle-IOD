@@ -13,47 +13,58 @@
         <h1>Welcome to login!</h1> 
     </header>
     <nav class="nav_bar">
-        <div class="nav_flex_container">
-            <h3 class="nav_title">Navbar</h3>
-            <ul>
-                <li class="nav_button"><a href=#>Home</a></li>
-                <li class="nav_button"><a href=#>Link</a></li>
-                <li class="nav_button"><a href=#>Dropdown</a></li>
-                <li class="nav_button"><a href=#>Affiliates</a></li>
-            </ul>
-        </div>
+        <table>
+            <tr>
+                <th class="nav_title">Navbar</th>
+                <td class="nav_button">Home</td>
+                <td class="nav_button">Link</td>
+                <td class="nav_button">Dropdown</td>
+                <td class="nav_button">Affiliates</td>
+            </tr>
+        </table>
+
         <div class="nav_space"></div>
         <div class="nav_search">
-            <input type="text" id="search_query" placeholder="Search"><button for="search_query">Search</button>
+            <label for="search_query"><input type="search" id="search_query" placeholder="Search"></label><button for="search_query" class="search_button">Search</button>
         </div>
     </nav>
+
+
     <article class="center_page">
-        <div>
-            <h1>Enter Here</h1>
-            <div>
+
+        
+
+        <h1>Enter Here</h1>
+        <section>
+            <div class="username_password">
                 <label for="username">Enter username. </label><input type="text" id="username" placeholder="username">
                 <label for="password">Enter password </label><input type="password" id="password" placeholder="password">
             </div>
-        </div>
-        <div>
-            <div><label for="male">Male </label><input id="male" name="gender" type="radio"></div>
-            <div><label for="female">Female </label><input id="female" name="gender" type="radio"></div>
-            <div><label for="nope">Nope </label><input id="nope" name="gender" type="radio"></div>
-        </div>
-            <div><button>LOGIN</button></div>
-            <p>Not registered? <a href="#">Create an account</a></p>
-        <div>
+
+            
+            <div class="gender_select">
+                <div><label for="male">Male <input id="male" name="gender" type="radio"></label></div>
+                <div><label for="female">Female <input id="female" name="gender" type="radio"></label></div>
+                <div><label for="nope">Nope <input id="nope" name="gender" type="radio"></label></div>
+            </div>
+
+            <div class="login_button"><button>LOGIN</button></div>
+
+            <p class="create_account">Not registered? <a href="#">Create an account</a></p>
+        </section>
+        <div class="disclaimers">
             <h2>Disclaimers</h2>
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Morbi laoreet lacus sit amet maximus interdum</li>
+                    <li>Duis metus velit. interdum sed quam quis, laoreet condimentum dui.  Vestibulum quis enim ullamcorper, ullamcorper ligula id, finibus sem</li>
                 </ul>
-                <p></p>
+                <p>Donec condimentum consectetur eros, fringilla condimentum sapien mollis sit amet.</p>
                 <ul>
-                    <li></li>
-                    <li></li>
+                    <li>Nam ipsum magna, dictum pellentesque elementum et, tempus luctus sapien.</li>
+                    <li>In hac habitasse platea dictumst.  In blandit turpis at orci viverra posuere.  Maecenas vel arcu at mi facilisis tincidunt quis ut metus. Proin commodo sem eu lorem mattis, eget mollis mi efficitur.</li>
                 </ul>
         </div>
     </article>
     
+
 </body>

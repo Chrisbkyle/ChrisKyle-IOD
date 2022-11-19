@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript Fundamentals Question 1</title>
+        <meta charset-utf-8>
+        <meta name="viewport" content="width=device-width" initial-scale="1" minimum-scale="1"> 
+    </head>
+    <body>
+        <script>
+            // 1 What are the results of these expressions
+
+
+            let exp1 = (" " + 1 + 0);   //10 this converts to a string 
+            let exp2 = (" " - 1 + 0);   //-1 this will remain a number
+            // let exp3 = true = false;   //return error
+            let exp4 = (6 / "3");   //2  this converts to a number type
+            let exp5 = ("2" * "3");  //6  this converts to a number type
+            let exp6 = (4 + 5 + "px");  //9px  the numbers will add and combine as a string with the string
+            let exp7 = ("$" + 4 + 5);  //$45  everything will add together as a sting
+            let exp8 = ("4" - 2);  //2 will all convert to a number
+            let exp9 = ("4px" - 2); //Nan  Converts to string??? cannot remove 2 from a string where the character 2 doesnt exsist???
+            let exp10 = (" -9 "  + 5); // -9 5 Converts to string
+            let exp11 = (" -9 " - 5); //  -14  Converts to number... not sure difference from above the negative number in a string doesn't seem to have issues combining two negative values
+            let exp12 = (null + 1);  // 1  null seems to = 0
+            let exp13 = (undefined + 1);  // Nan   undefined doesn't represent anything
+            let exp14 = (" \t \n" -2); // -2  \t and \n are meant to give instructions and aren't read as data types? \n means 'new line' not sure about \t
+
+
+            console.log(exp1);
+            console.log(exp2);
+            // console.log(exp3); error
+            console.log(exp4);
+            console.log(exp5);
+            console.log(exp6);
+            console.log(exp7);
+            console.log(exp8);
+            console.log(exp9);
+            console.log(exp10);
+            console.log(typeof(exp10))
+            console.log(exp11);
+            console.log(typeof(exp11))
+            console.log(exp12);
+            console.log(exp13);
+            console.log(exp14);
+        </script>
+    </body>
+</html>

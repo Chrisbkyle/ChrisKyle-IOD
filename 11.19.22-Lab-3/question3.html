@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript Fundamentals Question 3</title>
+        <meta charset-utf-8>
+        <meta name="viewport" content="width=device-width" initial-scale="1" minimum-scale="1"> 
+    </head>
+    <body>
+        <script>
+            // 3 What will be the results for these expressions
+
+
+            let bexp1 = 5 > 4;        //true 5 is in fact larger than 4
+            let bexp2 = "apple" > "pineapple";     //false   the ascii value of 'a' is lower than the value of 'p'
+            let bexp3 = "2" > "12";    //true   because they are comparing as a string '2' is not comparing itself to '12' it is comparing itself to the first character of the string so '2' > '1'
+            let bexp4 = undefined == null;  //true  they hold the same value, likely 0
+            let bexp5 = undefined === null;  //false  they hold the same value but NOT the same type
+            let bexp6 = null == "\n0\n";  //false  null doesn't seem to consider it's value to be 0... it's value is technically empty so maybe it's value does not compare directly to a number the '\n' doesn't seem change anything
+            let bexp7 = null === "\n0\n";  //false different value types
+
+            console.log(bexp1);
+            console.log(bexp2);
+            console.log(bexp3);
+            console.log(bexp4);
+            console.log(bexp5);
+            console.log(bexp6);
+            console.log(bexp7);
+            console.log(null == 0);
+        </script>
+    </body>
+</html>

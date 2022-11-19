@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript Fundamentals Question 8</title>
+        <meta charset-utf-8>
+        <meta name="viewport" content="width=device-width" initial-scale="1" minimum-scale="1"> 
+    </head>
+    <body>
+        <script>
+            // 8 There's a ladder object that allows to go up and down
+            // Modify the code of up, down and showStep to make the calls chainable
+            // like this: ladder.up(), .down(), .showStep();  // 1
+
+            let ladder = {
+                step: 1,
+
+                up()  {
+                    this.step++;
+                    return this;
+                },
+
+                down() {
+                    this.step--;
+                    return this;
+                },
+
+                showStep: function() { // shows the current step
+                    console.log( this.step );
+                }
+
+            };
+
+            ladder.up();
+            ladder.up();
+            ladder.showStep();
+            ladder.down();
+            ladder.showStep();
+            ladder.up().up().down().showStep();
+        </script>
+    </body>
+</html>
