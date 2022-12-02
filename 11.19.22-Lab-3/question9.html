@@ -22,29 +22,23 @@
             //values with the initial value startingValue
 
             //Here's the demo of the code:
+            function Accumulator(startingValue) {
+                this.value = startingValue;
 
-            // function questionNine() {
+                this.read = function() {
+                    this.value += +prompt('How much to add?', 0);
+                };
 
-                //Write constructor function here
-                function Accumulator(startingValue) {
-                    this.a = startingValue 
+            }
 
-                    this.read = function(){
-                        prompt('hello', 0);
-                    }
-                }
+            let accumulator = new Accumulator(1);
+            accumulator.read();
+            accumulator.read();
+            alert(accumulator.value);
 
-                console.log(Accumulator);
-
-                
-                let accumulator = new Accumulator(1); //initial value 1
-
-                accumulator.read(); // adds the user-entered value need to prompt user to enter value
-
-                accumulator.read(); // adds the user-entered value refers to something within the accumulator
-
-                console.log(accumulator.value); // shows the sum of these values
-            // }
+            console.log(Accumulator());
+            console.log(accumulator);
+            console.log(Accumulator);
             
             // initial value 1
 
